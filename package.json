@@ -1,0 +1,46 @@
+{
+  "name": "@saashqdev/doc-loader",
+  "description": "Webpack loader to generate Kubevue component docs.",
+  "version": "0.14.5",
+  "author": "Kubeworkz <kubeworkz@gmail.com>",
+  "main": "./index.js",
+  "repository": "saashqdev/doc-loader",
+  "bugs": {
+    "url": "http://github.com/saashqdev/doc-loader/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "kubevue",
+    "vue",
+    "webpack",
+    "loader"
+  ],
+  "tags": [
+    "kubevue",
+    "vue",
+    "webpack",
+    "loader"
+  ],
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "cloud-ui.kubevue": "^0.6.10",
+    "codesandbox": "^2.1.12",
+    "globby": "^6.1.0",
+    "safer-eval": "^1.2.3",
+    "vue-router": "^3.0.1",
+    "kubevue-api": "^0.5.21",
+    "kubevue-utils": "^0.4.7"
+  },
+  "devDependencies": {
+    "husky": "^3.0.4",
+    "kubevue-hooks": "^0.3.0",
+    "eslint": "^5.14.1",
+    "eslint-config-kubevue": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node node_modules/kubevue-hooks/pre-commit"
+    }
+  }
+}
